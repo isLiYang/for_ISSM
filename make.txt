@@ -1,0 +1,868 @@
+/bin/bash ./config.status --recheck
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure --prefix=/home/liyang/software/issm/trunk --disable-static --enable-development --enable-debugging --with-numthreads=4 --with-matlab-dir=/home/liyang/software/Polyspace/R2020b/ --with-fortran-lib=-L/usr/lib/x86_64-linux-gnu -lgfortran --with-mpi-include=/home/liyang/software/issm/trunk/externalpackages/petsc/install/include --with-mpi-libflags=-L/home/liyang/software/issm/trunk/externalpackages/petsc/install/lib -lmpi -lmpicxx -lmpifort --with-blas-lapack-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-metis-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-scalapack-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-mumps-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-hdf5-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-petsc-dir=/home/liyang/software/issm/trunk/externalpackages/petsc/install --with-gsl-dir=/home/liyang/software/issm/trunk/externalpackages/gsl/install --with-boost-dir=/home/liyang/software/issm/trunk/externalpackages/boost/install --with-dakota-dir=/home/liyang/software/issm/trunk/externalpackages/dakota/install --with-triangle-dir=/home/liyang/software/issm/trunk/externalpackages/triangle/install --with-chaco-dir=/home/liyang/software/issm/trunk/externalpackages/chaco/install --with-m1qn3-dir=/home/liyang/software/issm/trunk/externalpackages/m1qn3/install --with-semic-dir=/home/liyang/software/issm/trunk/externalpackages/semic/install --no-create --no-recursion
+configure: ============================================================================
+configure: =              Ice Sheet System Model (ISSM) 4.18 configuration            =
+configure: ============================================================================
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for icc... no
+checking for cl... no
+checking for icl... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for icpc... no
+checking for cl... no
+checking for icl... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for ifort... no
+checking for g77... no
+checking for gfortran... gfortran
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether gfortran accepts -g... yes
+checking for ifort... no
+checking for gfortran... gfortran
+checking whether we are using the GNU Fortran compiler... yes
+checking whether gfortran accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking dependency style of g++... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gfortran option to produce PIC... -fPIC
+checking if gfortran PIC flag -fPIC works... yes
+checking if gfortran static flag -static works... yes
+checking if gfortran supports -c -o file.o... yes
+checking if gfortran supports -c -o file.o... (cached) yes
+checking whether the gfortran linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gfortran option to produce PIC... -fPIC
+checking if gfortran PIC flag -fPIC works... yes
+checking if gfortran static flag -static works... yes
+checking if gfortran supports -c -o file.o... yes
+checking if gfortran supports -c -o file.o... (cached) yes
+checking whether the gfortran linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+configure: ============================================================================
+configure: =                      Checking ISSM specific options                      =
+configure: ============================================================================
+checking for date... /usr/bin/date
+checking for build date... Sun Sep 19 17:08:28 CST 2021
+checking user name... liyang
+checking host full OS name and version... linux
+checking host cpu... x86_64
+checking vendor... pc
+checking host OS name... linux
+checking host OS version... 5.11.0-34-generic
+checking host OS architecture... x86_64
+checking for debugging support... yes
+checking for development support... yes
+checking for standalone modules build... no
+checking for standalone executables build... no
+checking for standalone libraries build... no
+checking for wrappers compilation... yes
+checking if this is a Mac build... no
+checking if system copy of libc has fmemopen... yes
+checking for vendor compilers... done
+checking if this is a Windows build... no
+checking for MATLAB... yes
+checking MATLAB's mex compilation flags... done
+checking for JavaScript... no
+checking for triangle... yes
+checking for Boost... yes
+checking for Boost version... 1.73
+checking for Dakota... yes
+checking for Dakota version... 6.2
+checking for Dakota major version... 6
+checking for Dakota minor version... 2
+checking for Dakota build version... 0
+checking for Python... no
+checking for python-numpy... no
+checking for Chaco... yes
+checking for ESMF... no
+checking for CoDiPack... no
+checking for tape allocation... no
+checking for ADOL-C... no
+checking for ADOL-C version... 2
+checking for ADIC2... no
+checking for ATLAS and CBLAS libraries... no
+checking for GSL... yes
+checking for AMPI... no
+checking for Adjoint MPI... no
+checking for MeDiPack... no
+checking for HDF5 libraries... yes
+checking for PETSc... yes
+checking for PETSc version... 3.12
+checking whether PETSc is the development version... no
+checking for PETSc libraries and header files in /home/liyang/software/issm/trunk/externalpackages/petsc/install... done
+checking for MPI... yes
+checking for SCOTCH... no
+checking for TAO... yes
+checking for M1QN3... yes
+checking for PROJ... no
+checking for SLEPc... no
+checking for shapelib... no
+checking for ScaLAPACK... yes
+checking for BLAS/LAPACK... yes
+checking for MKL... no
+checking for PlaLAPACK... no
+checking for MUMPS... yes
+checking for BLACS... no
+checking for HYPRE... no
+checking for Prometheus... no
+checking for SEMIC... yes
+checking for SPAI... no
+checking for SuperLU... no
+checking for SPOOLES... no
+checking for PaStiX... no
+checking for ml... no
+checking for UMFPACK... no
+checking for libm... done
+checking for MATH77... no
+checking for Fortran compilation... yes
+checking for Fortran library... done
+checking for Xlib (graphics library)... done
+checking for MeteoIO... no
+checking for SNOWPACK... no
+checking for NeoPZ... no
+checking for Gmsh... no
+checking for BAMG capability compilation... yes
+checking for ice/ocean coupling capability compilation... no
+checking for kml capability compilation... no
+checking for kriging capability compilation... yes
+checking for AdjointBalancethickness2 capability compilation... yes
+checking for AdjointBalancethickness capability compilation... yes
+checking for AdjointHoriz capability compilation... yes
+checking for Balancethickness2 capability compilation... yes
+checking for Balancethickness capability compilation... yes
+checking for BalancethicknessSoft capability compilation... yes
+checking for Balancevelocity capability compilation... yes
+checking for DamageEvolution capability compilation... yes
+checking for DepthAverage capability compilation... yes
+checking for Enthalpy capability compilation... yes
+checking for Esa capability compilation... yes
+checking for Extrapolation capability compilation... yes
+checking for ExtrudeFromBase capability compilation... yes
+checking for ExtrudeFromTop capability compilation... yes
+checking for FreeSurfaceBase capability compilation... yes
+checking for FreeSurfaceTop capability compilation... yes
+checking for GLheightadvection capability compilation... yes
+checking for Gia capability compilation... yes
+checking for HydrologyDCEfficient capability compilation... yes
+checking for HydrologyDCInefficient capability compilation... yes
+checking for HydrologyShreve capability compilation... yes
+checking for HydrologyGlaDS capability compilation... yes
+checking for HydrologyShakti capability compilation... yes
+checking for HydrologyPism capability compilation... yes
+checking for L2ProjectionBase capability compilation... yes
+checking for L2ProjectionEPL capability compilation... yes
+checking for Levelset capability compilation... yes
+checking for Love capability compilation... yes
+checking for Masstransport capability compilation... yes
+checking for Melting capability compilation... yes
+checking for Sealevelrise capability compilation... yes
+checking for Smb capability compilation... yes
+checking for Smooth capability compilation... yes
+checking for Stressbalance capability compilation... yes
+checking for StressbalanceSIA capability compilation... yes
+checking for StressbalanceVertical capability compilation... yes
+checking for Thermal capability compilation... yes
+checking for UzawaPressure capability compilation... yes
+checking for iOS compilation... no
+checking for Android capability compilation... no
+checking with Android Native Development Kit (NDK)... no
+checking for C++ optimization flags... done
+checking for number of threads... 4
+checking for 64-bit indices... 0
+checking consistency between all libraries... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+ /bin/bash ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/c/Makefile
+config.status: creating src/wrappers/Makefile
+config.status: creating src/wrappers/python/Makefile
+config.status: creating src/wrappers/matlab/Makefile
+config.status: creating src/wrappers/javascript/Makefile
+config.status: creating src/mobile/Makefile
+config.status: creating src/mobile/native/Makefile
+config.status: creating src/m/Makefile
+config.status: creating ./config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/home/liyang/software/issm/trunk'
+Making all in src
+make[2]: Entering directory '/home/liyang/software/issm/trunk/src'
+Making all in c
+make[3]: Entering directory '/home/liyang/software/issm/trunk/src/c'
+  CXX      main/issm-issm.o
+  CXX      bamg/libISSMCore_la-BamgGeom.lo
+  CXX      bamg/libISSMCore_la-BamgMesh.lo
+  CXX      bamg/libISSMCore_la-BamgOpts.lo
+  CXX      bamg/libISSMCore_la-CrackedEdge.lo
+  CXX      bamg/libISSMCore_la-Curve.lo
+  CXX      bamg/libISSMCore_la-Edge.lo
+  CXX      bamg/libISSMCore_la-GeomEdge.lo
+  CXX      bamg/libISSMCore_la-GeomSubDomain.lo
+  CXX      bamg/libISSMCore_la-GeomVertex.lo
+  CXX      bamg/libISSMCore_la-Geometry.lo
+  CXX      bamg/libISSMCore_la-ListofIntersectionTriangles.lo
+  CXX      bamg/libISSMCore_la-EigenMetric.lo
+  CXX      bamg/libISSMCore_la-Metric.lo
+  CXX      bamg/libISSMCore_la-BamgQuadtree.lo
+  CXX      bamg/libISSMCore_la-SetOfE4.lo
+  CXX      bamg/libISSMCore_la-SubDomain.lo
+  CXX      bamg/libISSMCore_la-AdjacentTriangle.lo
+  CXX      bamg/libISSMCore_la-Triangle.lo
+  CXX      bamg/libISSMCore_la-BamgVertex.lo
+  CXX      bamg/libISSMCore_la-VertexOnEdge.lo
+  CXX      bamg/libISSMCore_la-VertexOnGeom.lo
+  CXX      bamg/libISSMCore_la-VertexOnVertex.lo
+  CXX      bamg/libISSMCore_la-Mesh.lo
+  CXX      modules/Bamgx/libISSMCore_la-Bamgx.lo
+  CXX      modules/BamgConvertMeshx/libISSMCore_la-BamgConvertMeshx.lo
+  CXX      modules/BamgTriangulatex/libISSMCore_la-BamgTriangulatex.lo
+  CXX      classes/libISSMCore_la-AmrBamg.lo
+  CXX      datastructures/libISSMCore_la-DataSet.lo
+  CXX      classes/gauss/libISSMCore_la-GaussSeg.lo
+  CXX      classes/gauss/libISSMCore_la-GaussTria.lo
+  CXX      classes/gauss/libISSMCore_la-GaussTetra.lo
+  CXX      classes/gauss/libISSMCore_la-GaussPenta.lo
+  CXX      classes/libISSMCore_la-IoModel.lo
+  CXX      classes/libISSMCore_la-FemModel.lo
+  CXX      classes/Loads/libISSMCore_la-Friction.lo
+  CXX      classes/Constraints/libISSMCore_la-SpcTransient.lo
+  CXX      classes/libISSMCore_la-DependentObject.lo
+  CXX      classes/libISSMCore_la-Contours.lo
+  CXX      classes/libISSMCore_la-Vertices.lo
+  CXX      classes/libISSMCore_la-Nodes.lo
+  CXX      classes/libISSMCore_la-Numberedcostfunction.lo
+  CXX      classes/libISSMCore_la-Misfit.lo
+  CXX      classes/libISSMCore_la-Cfsurfacesquare.lo
+  CXX      classes/libISSMCore_la-Cfdragcoeffabsgrad.lo
+  CXX      classes/libISSMCore_la-Cfsurfacelogvel.lo
+  CXX      classes/libISSMCore_la-Regionaloutput.lo
+  CXX      classes/libISSMCore_la-Nodalvalue.lo
+  CXX      classes/libISSMCore_la-Node.lo
+  CXX      classes/libISSMCore_la-Vertex.lo
+  CXX      classes/libISSMCore_la-Hook.lo
+  CXX      classes/libISSMCore_la-Radar.lo
+  CXX      classes/ExternalResults/libISSMCore_la-Results.lo
+  CXX      classes/Elements/libISSMCore_la-Element.lo
+  CXX      classes/Elements/libISSMCore_la-Elements.lo
+  CXX      classes/Elements/libISSMCore_la-ElementHook.lo
+  CXX      classes/Elements/libISSMCore_la-Seg.lo
+  CXX      classes/Elements/libISSMCore_la-SegRef.lo
+  CXX      classes/Elements/libISSMCore_la-Tria.lo
+  CXX      classes/Elements/libISSMCore_la-TriaRef.lo
+  CXX      classes/Elements/libISSMCore_la-Tetra.lo
+  CXX      classes/Elements/libISSMCore_la-TetraRef.lo
+  CXX      classes/Elements/libISSMCore_la-Penta.lo
+  CXX      classes/Elements/libISSMCore_la-PentaRef.lo
+  CXX      classes/Materials/libISSMCore_la-Materials.lo
+  CXX      classes/Materials/libISSMCore_la-Matice.lo
+  CXX      classes/Materials/libISSMCore_la-Matlitho.lo
+  CXX      classes/Materials/libISSMCore_la-Matestar.lo
+  CXX      classes/Constraints/libISSMCore_la-Constraints.lo
+  CXX      classes/Constraints/libISSMCore_la-SpcStatic.lo
+  CXX      classes/Constraints/libISSMCore_la-SpcDynamic.lo
+  CXX      classes/Loads/libISSMCore_la-Channel.lo
+  CXX      classes/Loads/libISSMCore_la-Loads.lo
+  CXX      classes/Loads/libISSMCore_la-Penpair.lo
+  CXX      classes/Loads/libISSMCore_la-Pengrid.lo
+  CXX      classes/Loads/libISSMCore_la-Moulin.lo
+  CXX      classes/Loads/libISSMCore_la-Numericalflux.lo
+  CXX      classes/Loads/libISSMCore_la-Neumannflux.lo
+  CXX      classes/matrix/libISSMCore_la-ElementMatrix.lo
+  CXX      classes/matrix/libISSMCore_la-ElementVector.lo
+  CXX      classes/Params/libISSMCore_la-Parameters.lo
+  CXX      classes/Params/libISSMCore_la-BoolParam.lo
+  CXX      classes/Params/libISSMCore_la-IntParam.lo
+  CXX      classes/Params/libISSMCore_la-IntVecParam.lo
+  CXX      classes/Params/libISSMCore_la-IntMatParam.lo
+  CXX      classes/Params/libISSMCore_la-DoubleParam.lo
+  CXX      classes/Params/libISSMCore_la-FileParam.lo
+  CXX      classes/Params/libISSMCore_la-StringArrayParam.lo
+  CXX      classes/Params/libISSMCore_la-DoubleMatParam.lo
+  CXX      classes/Params/libISSMCore_la-DoubleTransientMatParam.lo
+  CXX      classes/Params/libISSMCore_la-DoubleMatArrayParam.lo
+  CXX      classes/Params/libISSMCore_la-DoubleVecParam.lo
+  CXX      classes/Params/libISSMCore_la-StringParam.lo
+  CXX      classes/Params/libISSMCore_la-MatrixParam.lo
+  CXX      classes/Params/libISSMCore_la-VectorParam.lo
+  CXX      classes/Params/libISSMCore_la-TransientParam.lo
+  CXX      classes/Params/libISSMCore_la-TransientArrayParam.lo
+  CXX      classes/Params/libISSMCore_la-DataSetParam.lo
+  CXX      classes/libISSMCore_la-Profiler.lo
+  CXX      shared/Matrix/libISSMCore_la-MatrixUtils.lo
+  CXX      shared/io/Disk/libISSMCore_la-pfopen.lo
+  CXX      shared/io/Disk/libISSMCore_la-pfclose.lo
+  CXX      shared/io/Disk/libISSMCore_la-WriteLockFile.lo
+  CXX      shared/io/Print/libISSMCore_la-PrintfFunction.lo
+  CXX      shared/io/Comm/libISSMCore_la-IssmComm.lo
+  CXX      shared/io/Marshalling/libISSMCore_la-IoCodeConversions.lo
+  CXX      shared/io/Marshalling/libISSMCore_la-Marshalling.lo
+  CXX      shared/LatLong/libISSMCore_la-Ll2xyx.lo
+  CXX      shared/LatLong/libISSMCore_la-Xy2llx.lo
+  CXX      shared/FSanalyticals/libISSMCore_la-fsanalyticals.lo
+  CXX      shared/Enum/libISSMCore_la-EnumToStringx.lo
+  CXX      shared/Enum/libISSMCore_la-StringToEnumx.lo
+  CXX      shared/Numerics/libISSMCore_la-Verbosity.lo
+  CXX      shared/Numerics/libISSMCore_la-GaussPoints.lo
+  CXX      shared/Numerics/libISSMCore_la-cross.lo
+  CXX      shared/Numerics/libISSMCore_la-cubic.lo
+  CXX      shared/Numerics/libISSMCore_la-NewtonSolveDnorm.lo
+  CXX      shared/Numerics/libISSMCore_la-ODE1.lo
+  CXX      shared/Numerics/libISSMCore_la-extrema.lo
+  CXX      shared/Numerics/libISSMCore_la-legendre.lo
+  CXX      shared/Numerics/libISSMCore_la-XZvectorsToCoordinateSystem.lo
+  CXX      shared/Exceptions/libISSMCore_la-Exceptions.lo
+  CXX      shared/Sorting/libISSMCore_la-binary_search.lo
+  CXX      shared/Elements/libISSMCore_la-Cuffey.lo
+  CXX      shared/Elements/libISSMCore_la-BuddJacka.lo
+  CXX      shared/Elements/libISSMCore_la-CuffeyTemperate.lo
+  CXX      shared/Elements/libISSMCore_la-StressIntensityIntegralWeight.lo
+  CXX      shared/Elements/libISSMCore_la-Paterson.lo
+  CXX      shared/Elements/libISSMCore_la-Arrhenius.lo
+  CXX      shared/Elements/libISSMCore_la-NyeCO2.lo
+  CXX      shared/Elements/libISSMCore_la-NyeH2O.lo
+  CXX      shared/Elements/libISSMCore_la-LliboutryDuval.lo
+  CXX      shared/Elements/libISSMCore_la-PrintArrays.lo
+  CXX      shared/Elements/libISSMCore_la-PddSurfaceMassBalance.lo
+  CXX      shared/Elements/libISSMCore_la-PddSurfaceMassBalanceSicopolis.lo
+  CXX      shared/Elements/libISSMCore_la-ComputeDelta18oTemperaturePrecipitation.lo
+  CXX      shared/Elements/libISSMCore_la-ComputeMungsmTemperaturePrecipitation.lo
+  CXX      shared/Elements/libISSMCore_la-ComputeD18OTemperaturePrecipitationFromPD.lo
+  CXX      shared/Elements/libISSMCore_la-DrainageFunctionWaterfraction.lo
+  CXX      shared/Elements/libISSMCore_la-EstarComponents.lo
+  CXX      shared/String/libISSMCore_la-DescriptorIndex.lo
+  CXX      toolkits/issm/libISSMCore_la-IssmToolkitUtils.lo
+  CXX      toolkits/issm/libISSMCore_la-IssmSolver.lo
+  CXX      toolkits/mpi/libISSMCore_la-issmmpi.lo
+  CXX      toolkits/mpi/commops/libISSMCore_la-DetermineLocalSize.lo
+  CXX      toolkits/mpi/commops/libISSMCore_la-DetermineGlobalSize.lo
+  CXX      toolkits/mpi/commops/libISSMCore_la-DetermineRowRankFromLocalSize.lo
+  CXX      toolkits/mpi/commops/libISSMCore_la-GetOwnershipBoundariesFromRange.lo
+  CXX      toolkits/libISSMCore_la-ToolkitOptions.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-ModelProcessorx.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-ElementsAndVerticesPartitioning.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-NodesPartitioning.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-EdgesPartitioning.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-FacesPartitioning.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateParameters.lo
+  CXX      modules/ModelProcessorx/Autodiff/libISSMCore_la-CreateParametersAutodiff.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateFaces.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateEdges.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateSingleNodeToElementConnectivity.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateNumberNodeToElementConnectivity.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateElementsVerticesAndMaterials.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateNodes.lo
+  CXX      modules/ParseToolkitsOptionsx/libISSMCore_la-ParseToolkitsOptionsx.lo
+  CXX      modules/NodesDofx/libISSMCore_la-NodesDofx.lo
+  CXX      modules/NodalValuex/libISSMCore_la-NodalValuex.lo
+  CXX      modules/VertexCoordinatesx/libISSMCore_la-VertexCoordinatesx.lo
+  CXX      modules/OutputResultsx/libISSMCore_la-OutputResultsx.lo
+  CXX      modules/InputDepthAverageAtBasex/libISSMCore_la-InputDepthAverageAtBasex.lo
+  CXX      modules/InputDuplicatex/libISSMCore_la-InputDuplicatex.lo
+  CXX      modules/InputExtrudex/libISSMCore_la-InputExtrudex.lo
+  CXX      modules/SurfaceAreax/libISSMCore_la-SurfaceAreax.lo
+  CXX      modules/AllocateSystemMatricesx/libISSMCore_la-AllocateSystemMatricesx.lo
+  CXX      modules/CreateJacobianMatrixx/libISSMCore_la-CreateJacobianMatrixx.lo
+  CXX      modules/SystemMatricesx/libISSMCore_la-SystemMatricesx.lo
+  CXX      modules/CreateNodalConstraintsx/libISSMCore_la-CreateNodalConstraintsx.lo
+  CXX      modules/UpdateDynamicConstraintsx/libISSMCore_la-UpdateDynamicConstraintsx.lo
+  CXX      modules/IoModelToConstraintsx/libISSMCore_la-IoModelToConstraintsx.lo
+  CXX      modules/SetActiveNodesLSMx/libISSMCore_la-SetActiveNodesLSMx.lo
+  CXX      modules/InputUpdateFromConstantx/libISSMCore_la-InputUpdateFromConstantx.lo
+  CXX      modules/InputUpdateFromSolutionx/libISSMCore_la-InputUpdateFromSolutionx.lo
+  CXX      modules/GeothermalFluxx/libISSMCore_la-GeothermalFluxx.lo
+  CXX      modules/GetSolutionFromInputsx/libISSMCore_la-GetSolutionFromInputsx.lo
+  CXX      modules/GetVectorFromInputsx/libISSMCore_la-GetVectorFromInputsx.lo
+  CXX      modules/InputUpdateFromVectorx/libISSMCore_la-InputUpdateFromVectorx.lo
+  CXX      modules/FloatingiceMeltingRatex/libISSMCore_la-FloatingiceMeltingRatex.lo
+  CXX      modules/FloatingiceMeltingRatePicox/libISSMCore_la-FloatingiceMeltingRatePicox.lo
+  CXX      modules/FrontalForcingsx/libISSMCore_la-FrontalForcingsx.lo
+  CXX      modules/ConfigureObjectsx/libISSMCore_la-ConfigureObjectsx.lo
+  CXX      modules/SpcNodesx/libISSMCore_la-SpcNodesx.lo
+  CXX      modules/SurfaceMassBalancex/libISSMCore_la-SurfaceMassBalancex.lo
+  CXX      modules/SurfaceMassBalancex/libISSMCore_la-Gembx.lo
+  CXX      modules/Reducevectorgtofx/libISSMCore_la-Reducevectorgtofx.lo
+  CXX      modules/Reduceloadx/libISSMCore_la-Reduceloadx.lo
+  CXX      modules/ConstraintsStatex/libISSMCore_la-ConstraintsStatex.lo
+  CXX      modules/ResetConstraintsx/libISSMCore_la-ResetConstraintsx.lo
+  CXX      modules/ResetFSBasalBoundaryConditionx/libISSMCore_la-ResetFSBasalBoundaryConditionx.lo
+  CXX      modules/Solverx/libISSMCore_la-Solverx.lo
+  CXX      modules/Mergesolutionfromftogx/libISSMCore_la-Mergesolutionfromftogx.lo
+  CXX      cores/libISSMCore_la-ProcessArguments.lo
+  CXX      cores/libISSMCore_la-ResetBoundaryConditions.lo
+  CXX      cores/libISSMCore_la-WrapperCorePointerFromSolutionEnum.lo
+  CXX      cores/libISSMCore_la-CorePointerFromSolutionEnum.lo
+  CXX      cores/libISSMCore_la-ad_core.lo
+  CXX      cores/libISSMCore_la-adgradient_core.lo
+  CXX      main/libISSMCore_la-EnvironmentInit.lo
+  CXX      main/libISSMCore_la-EnvironmentFinalize.lo
+  CXX      analyses/libISSMCore_la-EnumToAnalysis.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_la.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_la_theta.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_linear.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_nonlinear.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_newton.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_fct.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_schurcg.lo
+  CXX      solutionsequences/libISSMCore_la-convergence.lo
+  CXX      classes/Options/libISSMCore_la-Options.lo
+  CXX      classes/Options/libISSMCore_la-OptionUtilities.lo
+  CXX      classes/libISSMCore_la-RiftStruct.lo
+  CXX      modules/ModelProcessorx/Transient/libISSMCore_la-UpdateElementsTransient.lo
+  CXX      cores/libISSMCore_la-transient_core.lo
+  CXX      cores/libISSMCore_la-steadystate_core.lo
+  CXX      cores/libISSMCore_la-masstransport_core.lo
+  CXX      cores/libISSMCore_la-depthaverage_core.lo
+  CXX      cores/libISSMCore_la-extrudefrombase_core.lo
+  CXX      cores/libISSMCore_la-extrudefromtop_core.lo
+  CXX      cores/libISSMCore_la-thermal_core.lo
+  CXX      cores/libISSMCore_la-smb_core.lo
+  CXX      cores/libISSMCore_la-bmb_core.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_thermal_nonlinear.lo
+  CXX      modules/ControlInputSetGradientx/libISSMCore_la-ControlInputSetGradientx.lo
+  CXX      modules/GetVectorFromControlInputsx/libISSMCore_la-GetVectorFromControlInputsx.lo
+  CXX      modules/SetControlInputsFromVectorx/libISSMCore_la-SetControlInputsFromVectorx.lo
+  CXX      modules/ModelProcessorx/Control/libISSMCore_la-CreateParametersControl.lo
+  CXX      modules/ModelProcessorx/Control/libISSMCore_la-UpdateElementsAndMaterialsControl.lo
+  CXX      modules/SurfaceAbsVelMisfitx/libISSMCore_la-SurfaceAbsVelMisfitx.lo
+  CXX      modules/SurfaceRelVelMisfitx/libISSMCore_la-SurfaceRelVelMisfitx.lo
+  CXX      modules/SurfaceLogVelMisfitx/libISSMCore_la-SurfaceLogVelMisfitx.lo
+  CXX      modules/SurfaceLogVxVyMisfitx/libISSMCore_la-SurfaceLogVxVyMisfitx.lo
+  CXX      modules/SurfaceAverageVelMisfitx/libISSMCore_la-SurfaceAverageVelMisfitx.lo
+  CXX      modules/ThicknessAbsMisfitx/libISSMCore_la-ThicknessAbsMisfitx.lo
+  CXX      modules/Gradjx/libISSMCore_la-Gradjx.lo
+  CXX      modules/DragCoefficientAbsGradientx/libISSMCore_la-DragCoefficientAbsGradientx.lo
+  CXX      modules/ThicknessAlongGradientx/libISSMCore_la-ThicknessAlongGradientx.lo
+  CXX      modules/ThicknessAcrossGradientx/libISSMCore_la-ThicknessAcrossGradientx.lo
+  CXX      modules/RheologyBbarAbsGradientx/libISSMCore_la-RheologyBbarAbsGradientx.lo
+  CXX      modules/RheologyBAbsGradientx/libISSMCore_la-RheologyBAbsGradientx.lo
+  CXX      shared/Numerics/libISSMCore_la-BrentSearch.lo
+  CXX      cores/libISSMCore_la-control_core.lo
+  CXX      cores/libISSMCore_la-controltao_core.lo
+  CXX      cores/libISSMCore_la-controlm1qn3_core.lo
+  CXX      cores/libISSMCore_la-controladm1qn3_core.lo
+  CXX      cores/libISSMCore_la-controlvalidation_core.lo
+  CXX      cores/libISSMCore_la-adjointstressbalance_core.lo
+  CXX      cores/libISSMCore_la-adjointbalancethickness_core.lo
+  CXX      cores/libISSMCore_la-adjointbalancethickness2_core.lo
+  CXX      cores/libISSMCore_la-AdjointCorePointerFromSolutionEnum.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_adjoint_linear.lo
+  CXX      cores/libISSMCore_la-hydrology_core.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_hydro_nonlinear.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_shakti_nonlinear.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_glads_nonlinear.lo
+  CXX      cores/libISSMCore_la-stressbalance_core.lo
+  CXX      solutionsequences/libISSMCore_la-solutionsequence_stokescoupling_nonlinear.lo
+  CXX      cores/libISSMCore_la-balancethickness_core.lo
+  CXX      cores/libISSMCore_la-balancethickness2_core.lo
+  CXX      cores/libISSMCore_la-balancevelocity_core.lo
+  CXX      cores/libISSMCore_la-surfaceslope_core.lo
+  CXX      cores/libISSMCore_la-bedslope_core.lo
+  CXX      cores/libISSMCore_la-damage_core.lo
+  CXX      cores/libISSMCore_la-levelsetfunctionslope_core.lo
+  CXX      cores/libISSMCore_la-movingfront_core.lo
+  CXX      cores/libISSMCore_la-groundingline_core.lo
+  CXX      modules/GroundinglineMigrationx/libISSMCore_la-GroundinglineMigrationx.lo
+  CXX      classes/Loads/libISSMCore_la-Riftfront.lo
+  CXX      modules/ConstraintsStatex/libISSMCore_la-RiftConstraintsState.lo
+  CXX      modules/ModelProcessorx/libISSMCore_la-CreateOutputDefinitions.lo
+  CXX      modules/OutputDefinitionsResponsex/libISSMCore_la-OutputDefinitionsResponsex.lo
+  CXX      modules/InterpFromMeshToMesh2dx/libISSMCore_la-InterpFromMeshToMesh2dx.lo
+  CXX      classes/Inputs/libISSMCore_la-Inputs.lo
+  CXX      classes/Inputs/libISSMCore_la-BoolInput.lo
+  CXX      classes/Inputs/libISSMCore_la-DoubleInput.lo
+  CXX      classes/Inputs/libISSMCore_la-IntInput.lo
+  CXX      classes/Inputs/libISSMCore_la-ElementInput.lo
+  CXX      classes/Inputs/libISSMCore_la-SegInput.lo
+  CXX      classes/Inputs/libISSMCore_la-TriaInput.lo
+  CXX      classes/Inputs/libISSMCore_la-PentaInput.lo
+  CXX      classes/Inputs/libISSMCore_la-DatasetInput.lo
+  CXX      classes/Inputs/libISSMCore_la-ControlInput.lo
+  CXX      classes/Inputs/libISSMCore_la-TransientInput.lo
+  CXX      classes/Inputs/libISSMCore_la-ArrayInput.lo
+  CXX      classes/Dakota/libISSMCore_la-IssmParallelDirectApplicInterface.lo
+  CXX      modules/InputUpdateFromDakotax/libISSMCore_la-InputUpdateFromDakotax.lo
+  CXX      modules/InputUpdateFromVectorDakotax/libISSMCore_la-InputUpdateFromVectorDakotax.lo
+  CXX      modules/InputUpdateFromMatrixDakotax/libISSMCore_la-InputUpdateFromMatrixDakotax.lo
+  CXX      modules/AverageOntoPartitionx/libISSMCore_la-AverageOntoPartitionx.lo
+  CXX      modules/ModelProcessorx/Dakota/libISSMCore_la-CreateParametersDakota.lo
+  CXX      modules/ModelProcessorx/Dakota/libISSMCore_la-UpdateElementsAndMaterialsDakota.lo
+  CXX      cores/libISSMCore_la-dakota_core.lo
+  CXX      modules/QmuStatisticsx/libISSMCore_la-QmuStatisticsx.lo
+./modules/QmuStatisticsx/QmuStatisticsx.cpp: In function 'int readdata(IssmDouble**, int*, IssmDouble*, FILE*, char*, int)':
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:32:8: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   32 |   fread(fieldname, sizeof(char), fieldname_size, fid);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:35:8: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   35 |   fread(&rtime, sizeof(IssmDouble), 1, fid);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:36:8: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   36 |   fread(&rstep, sizeof(int), 1, fid);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:42:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   42 |    fread(&type,sizeof(int),1,fid);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:43:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   43 |    fread(&M,sizeof(int),1,fid);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:45:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   45 |     fread(&dfield,sizeof(IssmDouble),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:48:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   48 |     fread(&M,sizeof(int),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:50:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   50 |     fread(sfield,sizeof(char),M,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:53:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   53 |     fread(&N,sizeof(int),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:55:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   55 |     fread(dmatfield,sizeof(IssmDouble),M*N,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:58:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   58 |     fread(&N,sizeof(int),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:60:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   60 |     fread(imatfield,sizeof(int),M*N,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:68:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   68 |    fread(&type,sizeof(int),1,fid);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:69:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   69 |    fread(&M,sizeof(int),1,fid);
+      |    ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:77:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   77 |     fread(&N,sizeof(int),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:81:10: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+   81 |     fread(&N,sizeof(int),1,fid);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp: In function 'int ComputeHistogram(Parameters*, Results*, int, ISSM_MPI_Comm)':
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:180:8: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+  180 |   fread(buffer, sizeof(char), length, fid);
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:414:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+  414 |   fread (buffer, sizeof(char), length, fid);
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp: In function 'int ComputeMeanVariance(Parameters*, Results*, int, ISSM_MPI_Comm)':
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:756:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+  756 |   fread (buffer, sizeof(char), length, fid);
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./modules/QmuStatisticsx/QmuStatisticsx.cpp: In function 'int ComputeSampleSeries(Parameters*, Results*, int, ISSM_MPI_Comm)':
+./modules/QmuStatisticsx/QmuStatisticsx.cpp:1080:9: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)', declared with attribute warn_unused_result [-Wunused-result]
+ 1080 |   fread (buffer, sizeof(char), length, fid);
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CXX      toolkits/petsc/patches/libISSMCore_la-VecToMPISerial.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-MatToSerial.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-NewVec.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-PetscOptionsDetermineSolverType.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-NewMat.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-VecFree.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-KSPFree.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-MatFree.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-MatMultPatch.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-ISSMToPetscMatrixType.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-ISSMToPetscInsertMode.lo
+  CXX      toolkits/petsc/patches/libISSMCore_la-ISSMToPetscNormMode.lo
+  CXX      toolkits/petsc/objects/libISSMCore_la-PetscMat.lo
+  CXX      toolkits/petsc/objects/libISSMCore_la-PetscVec.lo
+  CXX      toolkits/petsc/objects/libISSMCore_la-PetscSolver.lo
+  CXX      toolkits/mumps/libISSMCore_la-MumpsSolve.lo
+  CXX      toolkits/gsl/libISSMCore_la-DenseGslSolve.lo
+  CXX      analyses/libISSMCore_la-AdjointBalancethicknessAnalysis.lo
+  CXX      analyses/libISSMCore_la-AdjointBalancethickness2Analysis.lo
+  CXX      analyses/libISSMCore_la-AdjointHorizAnalysis.lo
+  CXX      analyses/libISSMCore_la-BalancethicknessAnalysis.lo
+  CXX      analyses/libISSMCore_la-Balancethickness2Analysis.lo
+  CXX      analyses/libISSMCore_la-BalancethicknessSoftAnalysis.lo
+  CXX      analyses/libISSMCore_la-BalancevelocityAnalysis.lo
+  CXX      analyses/libISSMCore_la-L2ProjectionBaseAnalysis.lo
+  CXX      analyses/libISSMCore_la-DamageEvolutionAnalysis.lo
+  CXX      modules/Damagex/libISSMCore_la-Damagex.lo
+  CXX      analyses/libISSMCore_la-StressbalanceAnalysis.lo
+  CXX      analyses/libISSMCore_la-UzawaPressureAnalysis.lo
+  CXX      analyses/libISSMCore_la-StressbalanceSIAAnalysis.lo
+  CXX      analyses/libISSMCore_la-StressbalanceVerticalAnalysis.lo
+  CXX      analyses/libISSMCore_la-EnthalpyAnalysis.lo
+  CXX      analyses/libISSMCore_la-GLheightadvectionAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyShreveAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyShaktiAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyPismAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyGlaDSAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyDCInefficientAnalysis.lo
+  CXX      analyses/libISSMCore_la-HydrologyDCEfficientAnalysis.lo
+  CXX      analyses/libISSMCore_la-L2ProjectionEPLAnalysis.lo
+  CXX      analyses/libISSMCore_la-MeltingAnalysis.lo
+  CXX      analyses/libISSMCore_la-MasstransportAnalysis.lo
+  CXX      analyses/libISSMCore_la-SmbAnalysis.lo
+  CXX      analyses/libISSMCore_la-FreeSurfaceBaseAnalysis.lo
+  CXX      analyses/libISSMCore_la-FreeSurfaceTopAnalysis.lo
+  CXX      analyses/libISSMCore_la-ExtrudeFromBaseAnalysis.lo
+  CXX      analyses/libISSMCore_la-ExtrudeFromTopAnalysis.lo
+  CXX      analyses/libISSMCore_la-DepthAverageAnalysis.lo
+  CXX      analyses/libISSMCore_la-ThermalAnalysis.lo
+  CXX      analyses/libISSMCore_la-SmoothAnalysis.lo
+  CXX      analyses/libISSMCore_la-LevelsetAnalysis.lo
+  CXX      modules/Calvingx/libISSMCore_la-Calvingx.lo
+  CXX      modules/KillIcebergsx/libISSMCore_la-KillIcebergsx.lo
+  CXX      analyses/libISSMCore_la-ExtrapolationAnalysis.lo
+  CXX      cores/libISSMCore_la-gia_core.lo
+  CXX      analyses/libISSMCore_la-GiaAnalysis.lo
+  CXX      modules/GiaDeflectionCorex/libISSMCore_la-GiaDeflectionCorex.lo
+  CXX      cores/libISSMCore_la-love_core.lo
+  CXX      analyses/libISSMCore_la-LoveAnalysis.lo
+  CXX      modules/FourierLoveCorex/libISSMCore_la-FourierLoveCorex.lo
+  CXX      cores/libISSMCore_la-esa_core.lo
+  CXX      analyses/libISSMCore_la-EsaAnalysis.lo
+  CXX      cores/libISSMCore_la-sealevelchange_core.lo
+  CXX      analyses/libISSMCore_la-SealevelriseAnalysis.lo
+  CXX      toolkits/metis/patches/libISSMCore_la-METIS_PartMeshNodalPatch.lo
+  CXX      classes/kriging/libISSMCore_la-Observations.lo
+  CXX      classes/kriging/libISSMCore_la-GaussianVariogram.lo
+  CXX      classes/kriging/libISSMCore_la-ExponentialVariogram.lo
+  CXX      classes/kriging/libISSMCore_la-SphericalVariogram.lo
+  CXX      classes/kriging/libISSMCore_la-PowerVariogram.lo
+  CXX      classes/kriging/libISSMCore_la-Quadtree.lo
+  CXX      classes/kriging/libISSMCore_la-Covertree.lo
+  CXX      classes/kriging/libISSMCore_la-Observation.lo
+  CXX      modules/Krigingx/libISSMCore_la-pKrigingx.lo
+  CXXLD    libISSMCore.la
+
+*** Warning: Linking the shared library libISSMCore.la against the
+*** static library /home/liyang/software/issm/trunk/externalpackages/m1qn3/install/libm1qn3.a is not portable!
+
+*** Warning: Linking the shared library libISSMCore.la against the
+*** static library /home/liyang/software/issm/trunk/externalpackages/m1qn3/install/libddot.a is not portable!
+  CXX      shared/String/ApiPrintf.lo
+  CXXLD    libISSMOverload.la
+  CXX      shared/Threads/libISSMModules_la-LaunchThread.lo
+  CXX      shared/Threads/libISSMModules_la-PartitionRange.lo
+  CXX      shared/Exp/libISSMModules_la-exp.lo
+  CXX      shared/Triangle/libISSMModules_la-GridInsideHole.lo
+  CXX      shared/Triangle/libISSMModules_la-TriangleUtils.lo
+  CXX      modules/Trianglex/libISSMModules_la-Trianglex.lo
+  CXX      modules/ProcessRiftsx/libISSMModules_la-ProcessRiftsx.lo
+  CXX      modules/PointCloudFindNeighborsx/libISSMModules_la-PointCloudFindNeighborsx.lo
+  CXX      modules/PointCloudFindNeighborsx/libISSMModules_la-PointCloudFindNeighborsxt.lo
+  CXX      modules/InterpFromGridToMeshx/libISSMModules_la-InterpFromGridToMeshx.lo
+  CXX      modules/InterpFromMesh2dx/libISSMModules_la-InterpFromMesh2dx.lo
+  CXX      modules/InterpFromMesh2dx/libISSMModules_la-InterpFromMesh2dxt.lo
+  CXX      modules/InterpFromMeshToMesh3dx/libISSMModules_la-InterpFromMeshToMesh3dx.lo
+  CXX      modules/InterpFromMeshToGridx/libISSMModules_la-InterpFromMeshToGridx.lo
+  CXX      modules/MeshProfileIntersectionx/libISSMModules_la-MeshProfileIntersectionx.lo
+  CXX      modules/ContourToMeshx/libISSMModules_la-ContourToMeshx.lo
+  CXX      modules/ContourToMeshx/libISSMModules_la-ContourToMeshxt.lo
+  CXX      modules/ExpToLevelSetx/libISSMModules_la-ExpToLevelSetx.lo
+  CXX      modules/ExpToLevelSetx/libISSMModules_la-ExpToLevelSetxt.lo
+  CXX      modules/ContourToNodesx/libISSMModules_la-ContourToNodesx.lo
+  CXX      modules/DistanceToMaskBoundaryx/libISSMModules_la-DistanceToMaskBoundaryx.lo
+  CXX      modules/DistanceToMaskBoundaryx/libISSMModules_la-DistanceToMaskBoundaryxt.lo
+  CXX      modules/NodeConnectivityx/libISSMModules_la-NodeConnectivityx.lo
+  CXX      modules/ElementConnectivityx/libISSMModules_la-ElementConnectivityx.lo
+  CXX      modules/PropagateFlagsFromConnectivityx/libISSMModules_la-PropagateFlagsFromConnectivityx.lo
+  CXX      modules/Chacox/libISSMModules_la-Chacox.lo
+  CXX      modules/Chacox/libISSMModules_la-input_parse.lo
+  CXX      modules/Chacox/libISSMModules_la-user_params.lo
+  CXX      modules/Krigingx/libISSMModules_la-Krigingx.lo
+  CXX      modules/Krigingx/libISSMModules_la-pKrigingx.lo
+  CXXLD    libISSMModules.la
+  CXXLD    issm.exe
+  CXX      main/issm_slr-issm_slr.o
+  CXXLD    issm_slr.exe
+  CXX      main/kriging-kriging.o
+  CXXLD    kriging.exe
+  CXX      main/issm_dakota-issm_dakota.o
+  CXXLD    issm_dakota.exe
+  CXX      main/issm_post-issm_post.o
+  CXXLD    issm_post.exe
+make[3]: Leaving directory '/home/liyang/software/issm/trunk/src/c'
+Making all in m
+make[3]: Entering directory '/home/liyang/software/issm/trunk/src/m'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/liyang/software/issm/trunk/src/m'
+Making all in wrappers
+make[3]: Entering directory '/home/liyang/software/issm/trunk/src/wrappers'
+Making all in matlab
+make[4]: Entering directory '/home/liyang/software/issm/trunk/src/wrappers/matlab'
+  CXX      io/libISSMMatlab_la-CheckNumMatlabArguments.lo
+  CXX      io/libISSMMatlab_la-FetchMatlabData.lo
+  CXX      io/libISSMMatlab_la-WriteMatlabData.lo
+  CXXLD    libISSMMatlab.la
+  CXX      io/libISSMApi_la-ApiPrintf.lo
+  CXXLD    libISSMApi.la
+  CXX      ../BamgConvertMesh/BamgConvertMesh_matlab_la-BamgConvertMesh.lo
+  CXXLD    BamgConvertMesh_matlab.la
+  CXX      ../BamgMesher/BamgMesher_matlab_la-BamgMesher.lo
+  CXXLD    BamgMesher_matlab.la
+  CXX      ../BamgTriangulate/BamgTriangulate_matlab_la-BamgTriangulate.lo
+  CXXLD    BamgTriangulate_matlab.la
+  CXX      ../ContourToMesh/ContourToMesh_matlab_la-ContourToMesh.lo
+  CXXLD    ContourToMesh_matlab.la
+  CXX      ../ContourToNodes/ContourToNodes_matlab_la-ContourToNodes.lo
+  CXXLD    ContourToNodes_matlab.la
+  CXX      ../DistanceToMaskBoundary/DistanceToMaskBoundary_matlab_la-DistanceToMaskBoundary.lo
+  CXXLD    DistanceToMaskBoundary_matlab.la
+  CXX      ../ElementConnectivity/ElementConnectivity_matlab_la-ElementConnectivity.lo
+  CXXLD    ElementConnectivity_matlab.la
+  CXX      ../ExpSimplify/ExpSimplify_matlab_la-ExpSimplify.lo
+  CXXLD    ExpSimplify_matlab.la
+  CXX      ../ExpToLevelSet/ExpToLevelSet_matlab_la-ExpToLevelSet.lo
+  CXXLD    ExpToLevelSet_matlab.la
+  CXX      ../InterpFromGridToMesh/InterpFromGridToMesh_matlab_la-InterpFromGridToMesh.lo
+  CXXLD    InterpFromGridToMesh_matlab.la
+  CXX      ../InterpFromMesh2d/InterpFromMesh2d_matlab_la-InterpFromMesh2d.lo
+  CXXLD    InterpFromMesh2d_matlab.la
+  CXX      ../InterpFromMeshToGrid/InterpFromMeshToGrid_matlab_la-InterpFromMeshToGrid.lo
+  CXXLD    InterpFromMeshToGrid_matlab.la
+  CXX      ../InterpFromMeshToMesh2d/InterpFromMeshToMesh2d_matlab_la-InterpFromMeshToMesh2d.lo
+  CXXLD    InterpFromMeshToMesh2d_matlab.la
+  CXX      ../InterpFromMeshToMesh3d/InterpFromMeshToMesh3d_matlab_la-InterpFromMeshToMesh3d.lo
+  CXXLD    InterpFromMeshToMesh3d_matlab.la
+  CXX      ../IssmConfig/IssmConfig_matlab_la-IssmConfig.lo
+  CXXLD    IssmConfig_matlab.la
+  CXX      ../M1qn3/M1qn3_matlab_la-M1qn3.lo
+  CXXLD    M1qn3_matlab.la
+
+*** Warning: Linking the shared library M1qn3_matlab.la against the
+*** static library /home/liyang/software/issm/trunk/externalpackages/m1qn3/install/libm1qn3.a is not portable!
+
+*** Warning: Linking the shared library M1qn3_matlab.la against the
+*** static library /home/liyang/software/issm/trunk/externalpackages/m1qn3/install/libddot.a is not portable!
+  CXX      ../MeshPartition/MeshPartition_matlab_la-MeshPartition.lo
+  CXXLD    MeshPartition_matlab.la
+  CXX      ../MeshProfileIntersection/MeshProfileIntersection_matlab_la-MeshProfileIntersection.lo
+  CXXLD    MeshProfileIntersection_matlab.la
+  CXX      ../NodeConnectivity/NodeConnectivity_matlab_la-NodeConnectivity.lo
+  CXXLD    NodeConnectivity_matlab.la
+  CXX      ../PointCloudFindNeighbors/PointCloudFindNeighbors_matlab_la-PointCloudFindNeighbors.lo
+  CXXLD    PointCloudFindNeighbors_matlab.la
+  CXX      ../PropagateFlagsFromConnectivity/PropagateFlagsFromConnectivity_matlab_la-PropagateFlagsFromConnectivity.lo
+  CXXLD    PropagateFlagsFromConnectivity_matlab.la
+  CXX      ../Triangle/Triangle_matlab_la-Triangle.lo
+  CXXLD    Triangle_matlab.la
+  CXX      ../ProcessRifts/ProcessRifts_matlab_la-ProcessRifts.lo
+  CXXLD    ProcessRifts_matlab.la
+  CXX      ../Scotch/Scotch_matlab_la-Scotch.lo
+  CXXLD    Scotch_matlab.la
+  CXX      ../Chaco/Chaco_matlab_la-Chaco.lo
+  CXXLD    Chaco_matlab.la
+  CXX      ../Kriging/Kriging_matlab_la-Kriging.lo
+  CXXLD    Kriging_matlab.la
+make[4]: Leaving directory '/home/liyang/software/issm/trunk/src/wrappers/matlab'
+make[4]: Entering directory '/home/liyang/software/issm/trunk/src/wrappers'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/liyang/software/issm/trunk/src/wrappers'
+make[3]: Leaving directory '/home/liyang/software/issm/trunk/src/wrappers'
+Making all in mobile
+make[3]: Entering directory '/home/liyang/software/issm/trunk/src/mobile'
+make[4]: Entering directory '/home/liyang/software/issm/trunk/src/mobile'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/liyang/software/issm/trunk/src/mobile'
+make[3]: Leaving directory '/home/liyang/software/issm/trunk/src/mobile'
+make[3]: Entering directory '/home/liyang/software/issm/trunk/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/liyang/software/issm/trunk/src'
+make[2]: Leaving directory '/home/liyang/software/issm/trunk/src'
+make[2]: Entering directory '/home/liyang/software/issm/trunk'
+make[2]: Leaving directory '/home/liyang/software/issm/trunk'
+make[1]: Leaving directory '/home/liyang/software/issm/trunk'

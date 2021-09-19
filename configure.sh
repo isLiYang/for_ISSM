@@ -1,0 +1,23 @@
+	./configure \
+	--prefix=${ISSM_DIR} \
+	--disable-static \
+	--enable-development \
+	--enable-debugging \
+	--with-numthreads=4 \
+	--with-matlab-dir=/home/liyang/software/Polyspace/R2020b/ \
+	--with-fortran-lib="-L/usr/lib/x86_64-linux-gnu -lgfortran" \
+	--with-mpi-include=${ISSM_DIR}/externalpackages/petsc/install/include \
+	--with-mpi-libflags="-L${ISSM_DIR}/externalpackages/petsc/install/lib -lmpi -lmpicxx -lmpifort" \
+	--with-blas-lapack-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-metis-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-scalapack-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-mumps-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-hdf5-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-petsc-dir=${ISSM_DIR}/externalpackages/petsc/install \
+	--with-gsl-dir=${ISSM_DIR}/externalpackages/gsl/install \
+	--with-boost-dir=${ISSM_DIR}/externalpackages/boost/install \
+	--with-dakota-dir=${ISSM_DIR}/externalpackages/dakota/install \
+	--with-triangle-dir=${ISSM_DIR}/externalpackages/triangle/install \
+	--with-chaco-dir=${ISSM_DIR}/externalpackages/chaco/install \
+	--with-m1qn3-dir=${ISSM_DIR}/externalpackages/m1qn3/install \
+	--with-semic-dir=${ISSM_DIR}/externalpackages/semic/install \
